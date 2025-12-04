@@ -1,0 +1,78 @@
+body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      font-family: Arial, sans-serif;
+      background-image: url(fundo2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 0 0 20px red;
+      margin-left: auto; /* Empurra o coração para a direita */
+      margin-right: auto;
+      order: 2;
+    }
+
+    .heart {
+      width: 24vw;
+      height: 24vw;
+      background-image: url(lari.jpg);
+      background-size: cover;
+      background-position: center;
+      -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M23.6,0c-3.4,0-6.4,2.1-7.6,5.1C14.8,2.1,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.2,16,21.2,16,21.2s16-12,16-21.2 C32,3.8,28.2,0,23.6,0z"/></svg>');
+      -webkit-mask-size: cover;
+      mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M23.6,0c-3.4,0-6.4,2.1-7.6,5.1C14.8,2.1,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.2,16,21.2,16,21.2s16-12,16-21.2 C32,3.8,28.2,0,23.6,0z"/></svg>');
+      mask-size: cover;
+      margin-left: auto; /* Empurra o coração para a direita */
+       margin-right: auto;
+       margin-top: 15vh;
+       order: 1;
+    }
+
+    .capri {
+      width: 6vw;
+       height: 6vw;
+        background-image: url(capri-definitivo-removebg-preview.png);
+    /* **NOVO:** margin-top: auto empurra o elemento para a parte inferior do contêiner flexível */
+         margin-top: auto; 
+    /* **NOVO:** margin-right: auto empurra o elemento para a esquerda */
+          margin-right: auto; 
+    
+    /* **NOVO:** Adiciona um pequeno espaço da borda inferior e esquerda */
+           margin-left: 3vw; 
+            margin-bottom: 2vh;
+            order: 3;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+
+
+    /* Aplica estas regras SOMENTE quando a largura máxima da tela for 600px ou menos 
+   (típico para celulares em modo retrato) */
+@media (max-width: 600px) {
+    
+    /* Diminui o coração para que caiba bem na tela do celular */
+    .heart {
+        width: 200px; /* Reduz de 300px para 200px */
+        height: 200px;
+    }
+
+    /* Reduz o tamanho da fonte do título, se necessário */
+    h1 {
+        font-size: 1.2em; 
+    }
+
+    /* Ajusta a margem do boizinho se ele estiver muito colado na borda */
+    .capri {
+        width: 60px;
+        height: 60px;
+        bottom: 1vw;
+        left: 1vh;
+    }
+}
