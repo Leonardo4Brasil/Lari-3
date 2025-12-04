@@ -1,2 +1,2 @@
-# Lari-3
+# Lari
 &lt;3
