@@ -1,6 +1,7 @@
 body {
       height: 100vh;
       margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       background-color: black;
@@ -9,6 +10,7 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      overflow-x: hidden;
     }
 
     h1 {
@@ -59,8 +61,8 @@ body {
     
     /* Diminui o coração para que caiba bem na tela do celular */
     .heart {
-        width: 200px; /* Reduz de 300px para 200px */
-        height: 200px;
+        width: 150px; /* Reduz de 300px para 200px */
+        height: 150px;
     }
 
     /* Reduz o tamanho da fonte do título, se necessário */
